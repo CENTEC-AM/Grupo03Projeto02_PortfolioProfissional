@@ -1,0 +1,612 @@
+/* ==================== RESET ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==================== CONFIGURAÇÕES GERAIS ==================== */
+
+body {
+    background-color: #0a1a2a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ==================== CABEÇALHO ==================== */
+
+.cabecalho {
+    width: 100%;
+}
+
+
+/* Navbar */
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #dcefff;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #dcefff;
+}
+
+
+/* ==================== APRESENTAÇÃO ==================== */
+
+.head {
+    width: min(90%, 600px);
+    min-height: 500px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #2b556e;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Imagem */
+
+.head img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+
+    border: 4px solid white;
+}
+
+
+/* Título */
+
+.head h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Textos */
+
+.head p {
+    margin-bottom: 5px;
+}
+
+
+/* ==================== SOBRE MIM ==================== */
+
+.sobre {
+    width: min(90%, 1200px);
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background-color: #2b556e;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sobre h2 {
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+
+
+/* ==================== LAYOUT DOS CARDS ==================== */
+
+.layout {
+    width: min(95%, 1500px);
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* ==================== CARDS ==================== */
+
+.card {
+    background-color: #2b556e;
+
+    color: white;
+
+    padding: 25px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    height: 100%;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Títulos */
+
+.card h2 {
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+.card h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+.card h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+
+    color: white;
+}
+
+
+/* Parágrafos */
+
+.card p {
+    color: white;
+}
+
+
+/* Listas */
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 5px;
+}
+
+
+/* ==================== RODAPÉ ==================== */
+
+.rodape {
+    width: 100%;
+
+    margin-top: 40px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.rodape hr {
+    border: 0;
+
+    border-top: 2px solid #2b556e;
+
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.rodape p {
+    margin-top: 20px;
+
+    color: #b8c7d4;
+}
+
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+
+/* Tablets */
+
+@media (max-width: 992px) {
+
+    .layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* Celulares */
+
+@media (max-width: 768px) {
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .head {
+        min-height: auto;
+
+        padding: 25px;
+    }
+
+    .head img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sobre {
+        width: 90%;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+}
+
+
+/* Celulares pequenos */
+
+@media (max-width: 480px) {
+
+    .head img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .head h1 {
+        font-size: 28px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu .btn {
+        width: 100%;
+    }
+
+}
+/* ==================== PÁGINA DE PROJETOS ==================== */
+
+.projetos {
+    width: min(95%, 1500px);
+    margin: 40px auto;
+}
+
+
+/* Introdução */
+
+.projetos-introducao {
+    background-color: #2b556e;
+    padding: 30px;
+    border-radius: 12px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.projetos-introducao h1 {
+    margin-bottom: 15px;
+}
+
+.projetos-introducao p {
+    margin: 0;
+}
+
+
+/* Grid dos projetos */
+
+.projetos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* Cards */
+
+.projeto-card {
+    background-color: #2b556e;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Títulos */
+
+.projeto-card h2 {
+    margin-bottom: 20px;
+}
+
+.projeto-card h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+
+    font-size: 20px;
+}
+
+
+/* Texto */
+
+.projeto-card p {
+    line-height: 1.6;
+}
+
+
+/* Lista */
+
+.projeto-card ul {
+    padding-left: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Botão */
+
+.projeto-card .btn {
+    margin-top: auto;
+
+    align-self: flex-start;
+}
+
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+@media (max-width: 992px) {
+
+    .projetos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projetos {
+        width: 90%;
+    }
+
+}
+/* ==================== PÁGINA DE CONTATOS ==================== */
+
+.contatos {
+    width: min(95%, 1000px);
+    margin: 40px auto;
+}
+
+
+/* ==================== INTRODUÇÃO ==================== */
+
+.contatos-introducao {
+    background-color: #2b556e;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contatos-introducao h1 {
+    margin-bottom: 15px;
+}
+
+.contatos-introducao p {
+    margin: 0;
+}
+
+
+/* ==================== REDES SOCIAIS ==================== */
+
+.redes-sociais {
+    background-color: #2b556e;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.redes-sociais h2 {
+    margin-bottom: 25px;
+}
+
+
+/* Container das redes */
+
+.redes-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Cada rede */
+
+.rede {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: transform 0.2s ease;
+}
+
+.rede:hover {
+    transform: translateY(-5px);
+}
+
+.rede img {
+    width: 90px;
+    height: 90px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+.rede span {
+    font-weight: bold;
+}
+
+
+/* ==================== FORMULÁRIO ==================== */
+
+.contato-form {
+    background-color: #2b556e;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contato-form h2 {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+.contato-form label {
+    color: white;
+}
+
+
+/* Campos */
+
+.contato-form input,
+.contato-form textarea {
+    background-color: white;
+
+    color: #222;
+
+    border: none;
+
+    border-radius: 6px;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.3);
+}
+
+
+/* Botão */
+
+.contato-form button {
+    display: block;
+
+    margin: 20px auto 0;
+}
+
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+@media (max-width: 768px) {
+
+    .contatos {
+        width: 90%;
+    }
+
+    .redes-container {
+        gap: 30px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+}
